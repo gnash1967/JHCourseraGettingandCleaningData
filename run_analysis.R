@@ -99,3 +99,5 @@ summary_with_mean <- combined_all %>% group_by(Subject, Activity) %>%
 
 write.csv(summary_with_mean, 'Summary_with_Mean.csv', row.names = FALSE)
 
+# instructions also asked to use write.table() with row.name = FALSE
+write.table(summary_with_mean, file='Summary_with_Mean.txt')
